@@ -1,0 +1,21 @@
+{
+  "behaviors": {
+    "PlayerBehavior": {
+      "scriptId": "4",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector3"
+        }
+      ]
+    },
+    "CameraBehavior": {
+      "scriptId": "5",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
+}

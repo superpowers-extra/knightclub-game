@@ -1,0 +1,37 @@
+[
+  {
+    "id": "0",
+    "name": "Room 1",
+    "type": "scene"
+  },
+  {
+    "id": "1",
+    "name": "Character",
+    "type": "sprite"
+  },
+  {
+    "id": "2",
+    "name": "Floor",
+    "type": "sprite"
+  },
+  {
+    "id": "3",
+    "name": "Wall",
+    "type": "sprite"
+  },
+  {
+    "id": "6",
+    "name": "Game",
+    "type": "script"
+  },
+  {
+    "id": "4",
+    "name": "Player Behavior",
+    "type": "script"
+  },
+  {
+    "id": "5",
+    "name": "Camera Behavior",
+    "type": "script"
+  }
+]
