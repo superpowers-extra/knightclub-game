@@ -1,23 +1,86 @@
 [
   {
-    "id": "0",
-    "name": "Room 1",
-    "type": "scene"
+    "id": "21",
+    "name": "TODO",
+    "type": "script"
   },
   {
-    "id": "1",
-    "name": "Character",
-    "type": "sprite"
+    "id": "15",
+    "name": "Utils",
+    "type": null,
+    "children": [
+      {
+        "id": "17",
+        "name": "Fade",
+        "type": null,
+        "children": [
+          {
+            "id": "16",
+            "name": "Manager",
+            "type": "script"
+          },
+          {
+            "id": "18",
+            "name": "Black Screen",
+            "type": "sprite"
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "Post Processing",
+        "type": null,
+        "children": [
+          {
+            "id": "23",
+            "name": "Script",
+            "type": "script"
+          },
+          {
+            "id": "24",
+            "name": "Shader",
+            "type": "shader"
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": "2",
-    "name": "Floor",
-    "type": "sprite"
-  },
-  {
-    "id": "3",
-    "name": "Wall",
-    "type": "sprite"
+    "id": "25",
+    "name": "Main Menu",
+    "type": null,
+    "children": [
+      {
+        "id": "26",
+        "name": "Scene",
+        "type": "scene"
+      },
+      {
+        "id": "30",
+        "name": "Behavior",
+        "type": "script"
+      },
+      {
+        "id": "31",
+        "name": "Logo",
+        "type": "sprite"
+      },
+      {
+        "id": "27",
+        "name": "fr",
+        "type": "sprite"
+      },
+      {
+        "id": "28",
+        "name": "en",
+        "type": "sprite"
+      },
+      {
+        "id": "29",
+        "name": "Selection",
+        "type": "sprite"
+      }
+    ]
   },
   {
     "id": "6",
@@ -25,13 +88,304 @@
     "type": "script"
   },
   {
-    "id": "4",
-    "name": "Player Behavior",
-    "type": "script"
-  },
-  {
     "id": "5",
     "name": "Camera Behavior",
     "type": "script"
+  },
+  {
+    "id": "7",
+    "name": "Player",
+    "type": null,
+    "children": [
+      {
+        "id": "10",
+        "name": "Prefab",
+        "type": "scene"
+      },
+      {
+        "id": "4",
+        "name": "Behavior",
+        "type": "script"
+      },
+      {
+        "id": "1",
+        "name": "Sprite",
+        "type": "sprite"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Scenery",
+    "type": null,
+    "children": [
+      {
+        "id": "2",
+        "name": "Floor",
+        "type": "sprite"
+      },
+      {
+        "id": "70",
+        "name": "Stairs",
+        "type": "sprite"
+      },
+      {
+        "id": "3",
+        "name": "Wall",
+        "type": "sprite"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Places",
+    "type": null,
+    "children": [
+      {
+        "id": "32",
+        "name": "Room 1",
+        "type": null,
+        "children": [
+          {
+            "id": "0",
+            "name": "Prefab",
+            "type": "scene"
+          }
+        ]
+      },
+      {
+        "id": "33",
+        "name": "Room 2",
+        "type": null,
+        "children": [
+          {
+            "id": "11",
+            "name": "Prefab",
+            "type": "scene"
+          }
+        ]
+      },
+      {
+        "id": "67",
+        "name": "Town Entrance",
+        "type": null,
+        "children": [
+          {
+            "id": "69",
+            "name": "Prefab",
+            "type": "scene"
+          }
+        ]
+      },
+      {
+        "id": "68",
+        "name": "Nightclub Entrance",
+        "type": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Objects",
+    "type": null,
+    "children": [
+      {
+        "id": "19",
+        "name": "Teleporter",
+        "type": null,
+        "children": [
+          {
+            "id": "13",
+            "name": "Behavior",
+            "type": "script"
+          },
+          {
+            "id": "20",
+            "name": "Marker",
+            "type": "sprite"
+          }
+        ]
+      },
+      {
+        "id": "50",
+        "name": "Interaction",
+        "type": null,
+        "children": [
+          {
+            "id": "38",
+            "name": "Behavior",
+            "type": "script"
+          },
+          {
+            "id": "51",
+            "name": "Sprite",
+            "type": "sprite"
+          }
+        ]
+      },
+      {
+        "id": "52",
+        "name": "Characters",
+        "type": null,
+        "children": [
+          {
+            "id": "54",
+            "name": "Fade Out Behavior",
+            "type": "script"
+          },
+          {
+            "id": "35",
+            "name": "Character Behavior",
+            "type": "script"
+          },
+          {
+            "id": "34",
+            "name": "Knight",
+            "type": null,
+            "children": [
+              {
+                "id": "37",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "36",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "55",
+            "name": "Mage",
+            "type": null,
+            "children": [
+              {
+                "id": "56",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "57",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "61",
+            "name": "Pedestrians",
+            "type": null,
+            "children": [
+              {
+                "id": "59",
+                "name": "Spawner Behavior",
+                "type": "script"
+              },
+              {
+                "id": "65",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "66",
+                "name": "Behavior",
+                "type": "script"
+              },
+              {
+                "id": "62",
+                "name": "Sprites",
+                "type": null,
+                "children": [
+                  {
+                    "id": "63",
+                    "name": "Knight",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "64",
+                    "name": "Mage",
+                    "type": "sprite"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Text",
+    "type": null,
+    "children": [
+      {
+        "id": "45",
+        "name": "en",
+        "type": "script"
+      },
+      {
+        "id": "44",
+        "name": "fr",
+        "type": "script"
+      },
+      {
+        "id": "42",
+        "name": "Animated Text Behavior",
+        "type": "script"
+      },
+      {
+        "id": "48",
+        "name": "Font",
+        "type": "font"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "HUD",
+    "type": null,
+    "children": [
+      {
+        "id": "47",
+        "name": "Prefab",
+        "type": "scene"
+      },
+      {
+        "id": "60",
+        "name": "Quest Manager",
+        "type": "script"
+      },
+      {
+        "id": "41",
+        "name": "Dialog",
+        "type": null,
+        "children": [
+          {
+            "id": "40",
+            "name": "Behavior",
+            "type": "script"
+          },
+          {
+            "id": "46",
+            "name": "Frame",
+            "type": "sprite"
+          }
+        ]
+      },
+      {
+        "id": "43",
+        "name": "Portraits",
+        "type": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "name": "Test",
+    "type": "model"
   }
 ]

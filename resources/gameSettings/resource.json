@@ -1,8 +1,8 @@
 {
   "formatVersion": 1,
-  "startupSceneId": "0",
+  "startupSceneId": "26",
   "framesPerSecond": 60,
-  "ratioNumerator": null,
-  "ratioDenominator": null,
+  "ratioNumerator": 16,
+  "ratioDenominator": 9,
   "customLayers": []
 }

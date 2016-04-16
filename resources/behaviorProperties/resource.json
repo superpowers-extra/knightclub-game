@@ -2,7 +2,7 @@
   "behaviors": {
     "PlayerBehavior": {
       "scriptId": "4",
-      "line": 0,
+      "line": 8,
       "parentBehavior": null,
       "properties": [
         {
@@ -15,7 +15,146 @@
       "scriptId": "5",
       "line": 0,
       "parentBehavior": null,
+      "properties": [
+        {
+          "name": "effect",
+          "type": "any"
+        }
+      ]
+    },
+    "TeleporterBehavior": {
+      "scriptId": "13",
+      "line": 6,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "place",
+          "type": "string"
+        },
+        {
+          "name": "target",
+          "type": "string"
+        },
+        {
+          "name": "angle",
+          "type": "number"
+        },
+        {
+          "name": "width",
+          "type": "number"
+        },
+        {
+          "name": "depth",
+          "type": "number"
+        },
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector3"
+        }
+      ]
+    },
+    "MainMenuBehavior": {
+      "scriptId": "30",
+      "line": 0,
+      "parentBehavior": null,
       "properties": []
+    },
+    "CharacterBehavior": {
+      "scriptId": "35",
+      "line": 0,
+      "parentBehavior": "InteractionBehavior",
+      "properties": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "lineId",
+          "type": "string"
+        },
+        {
+          "name": "canShapeShift",
+          "type": "boolean"
+        },
+        {
+          "name": "isSpeaking",
+          "type": "boolean"
+        }
+      ]
+    },
+    "InteractionBehavior": {
+      "scriptId": "38",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "spritePath",
+          "type": "string"
+        },
+        {
+          "name": "canShapeShift",
+          "type": "boolean"
+        }
+      ]
+    },
+    "DialogBehavior": {
+      "scriptId": "40",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "AnimatedTextBehavior": {
+      "scriptId": "42",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "charsPerLine",
+          "type": "number"
+        },
+        {
+          "name": "framesPerChar",
+          "type": "number"
+        }
+      ]
+    },
+    "CharacterFadeOutBehavior": {
+      "scriptId": "54",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "QuestManagerBehavior": {
+      "scriptId": "60",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "PedestriansSpawnerBehavior": {
+      "scriptId": "59",
+      "line": 2,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "nextPedestrianTimeout",
+          "type": "number"
+        }
+      ]
+    },
+    "PedestriansBehavior": {
+      "scriptId": "66",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": [
+        {
+          "name": "lineId",
+          "type": "string"
+        }
+      ]
     }
   }
 }

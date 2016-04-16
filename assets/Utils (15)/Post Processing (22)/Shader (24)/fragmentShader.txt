@@ -1,0 +1,19 @@
+uniform sampler2D tDiffuse;
+varying vec2 vUv;
+
+void main() {
+  vec2 uv = /*vec2(
+    floor(vUv.x * 320.) / 320.,
+    floor(vUv.y * 180.) / 180.
+  )*/ vUv;
+  
+  vec4 rgba = texture2D(tDiffuse, uv);
+  
+  
+  gl_FragColor = rgba;
+
+  /*vec4 intensity;
+  if(fract(gl_FragCoord.y * (0.5 * 1.5 / 3.0)) > 0.5) intensity = vec4(0);
+  else intensity = smoothstep(0.4, 0.8, rgba) + normalize(rgba);
+  gl_FragColor = intensity * -0.25 + rgba * 1.1;*/
+}
