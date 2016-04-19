@@ -58,6 +58,8 @@ class SewersEntranceBehavior extends CharacterBehavior {
     }
   }
 
+  tryShapeShift() { return false; }
+
   private open() {
     this.actor.getChild("Model").modelRenderer.setModel("Places/Market/Map/Door Open");
     this.actor.getChild("Physics").destroy();
