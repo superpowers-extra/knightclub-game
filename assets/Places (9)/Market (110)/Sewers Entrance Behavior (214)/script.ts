@@ -14,6 +14,7 @@ class SewersEntranceBehavior extends CharacterBehavior {
     
     if (SewersEntranceBehavior.opened) {
       this.open();
+      this.destroy();
       return;
     }
     
@@ -39,6 +40,8 @@ class SewersEntranceBehavior extends CharacterBehavior {
     }
     
     if (Game.playerPersonId === "Fitness Club/Musclor" && this.activeLineIndex === 0 && Game.dialog.actor.getVisible() && Game.dialog.animatedText.isTextFullyDisplayed()) {
+      SewersEntranceBehavior.opened = true;
+      this.open();
       Sup.Audio.playSound("SFX/Sewers/Crack Pants");
     }
     
@@ -53,8 +56,7 @@ class SewersEntranceBehavior extends CharacterBehavior {
       Game.questManager.setCurrentGoal(Game.Goals.throughSewers);
     }
     if (Game.playerPersonId === "Fitness Club/Musclor") {
-      SewersEntranceBehavior.opened = true;
-      this.open();
+      this.destroy();
     }
   }
 
@@ -63,7 +65,6 @@ class SewersEntranceBehavior extends CharacterBehavior {
   private open() {
     this.actor.getChild("Model").modelRenderer.setModel("Places/Market/Map/Door Open");
     this.actor.getChild("Physics").destroy();
-    this.destroy();
   }
 }
 Sup.registerBehavior(SewersEntranceBehavior);
