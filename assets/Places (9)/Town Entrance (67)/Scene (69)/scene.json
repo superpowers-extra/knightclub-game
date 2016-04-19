@@ -1,0 +1,2014 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "15",
+      "name": "Main",
+      "children": [
+        {
+          "id": "0",
+          "name": "Camera",
+          "children": [],
+          "components": [
+            {
+              "type": "Camera",
+              "config": {
+                "formatVersion": 1,
+                "mode": "perspective",
+                "fov": 30,
+                "orthographicScale": 10,
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1,
+                  "height": 1
+                },
+                "depth": 0,
+                "nearClippingPlane": 0.1,
+                "farClippingPlane": 1000
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CameraBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 4.205071449279785,
+            "y": 6.883463382720947,
+            "z": 15.586902618408203
+          },
+          "orientation": {
+            "x": -0.14889946543156685,
+            "y": 0.10267116703543673,
+            "z": -0.0008366433048904397,
+            "w": 0.9835074401267632
+          },
+          "scale": {
+            "x": 0.9999999761022024,
+            "y": 0.999999984109046,
+            "z": 1.0000000121738746
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "IntroBehavior",
+            "propertyValues": {}
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "6",
+      "name": "Scenery",
+      "children": [
+        {
+          "id": "32",
+          "name": "Map",
+          "children": [],
+          "components": [
+            {
+              "type": "ModelRenderer",
+              "config": {
+                "formatVersion": 1,
+                "modelAssetId": "103",
+                "animationId": "",
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 3.5,
+            "z": 0
+          },
+          "orientation": {
+            "x": -0.050610447005756946,
+            "y": 0,
+            "z": 0,
+            "w": 0.9987184687376843
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "5",
+      "name": "Physics",
+      "children": [
+        {
+          "id": "9",
+          "name": "Floor",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 2,
+                  "y": 0.25,
+                  "z": 2
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 7.98,
+            "y": 3.1,
+            "z": 1.023
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "10",
+          "name": "Stairs",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 3,
+                  "y": 0.5,
+                  "z": 1
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 3.8476107120513916,
+            "y": 1.174169659614563,
+            "z": 2.383692502975464
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0.3090169943749474,
+            "w": 0.9510565162951535
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "11",
+          "name": "Bridge",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 8,
+                  "y": 0.25,
+                  "z": 1.5
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -1.285,
+            "y": 3.1,
+            "z": 0.251
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "33",
+          "name": "Floor",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 2,
+                  "y": 0.25,
+                  "z": 4
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 2.229135513305664,
+            "y": 0.7081567049026489,
+            "z": 1.0230000019073486
+          },
+          "orientation": {
+            "x": 0.06118513237009885,
+            "y": 0,
+            "z": 0,
+            "w": 0.9981264355146944
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "34",
+          "name": "Water",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 2,
+                  "y": 1,
+                  "z": 4
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -1.804034948348999,
+            "y": 0.6243847608566284,
+            "z": 1.0230000019073486
+          },
+          "orientation": {
+            "x": 0.06118513237009885,
+            "y": 0,
+            "z": 0,
+            "w": 0.9981264355146944
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "35",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 2,
+                  "y": 1,
+                  "z": 0.25
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 7.980000019073486,
+            "y": 3.8324480056762695,
+            "z": 3.2744531631469727
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "36",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.2,
+                  "y": 1,
+                  "z": 3
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 10.175433158874512,
+            "y": 3.8483664989471436,
+            "z": 1.047475814819336
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "37",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 8.5,
+                  "y": 3,
+                  "z": 0.25
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1.637890100479126,
+            "y": 1.4769614934921265,
+            "z": -1.1716691255569458
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "38",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 8.5,
+                  "y": 0.5,
+                  "z": 0.1
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -2.660950183868408,
+            "y": 3.5584616661071777,
+            "z": 1.7171533107757568
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "46",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.1,
+                  "y": 1,
+                  "z": 0.8
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -8.766863822937012,
+            "y": 3.8324480056762695,
+            "z": 1.0123944282531738
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "40",
+          "name": "Stairs Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 3,
+                  "y": 1,
+                  "z": 0.1
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 3.8479065895080566,
+            "y": 1.183653473854065,
+            "z": 3.5492115020751953
+          },
+          "orientation": {
+            "x": -0.005472077953602661,
+            "y": 0.016841324120711165,
+            "z": 0.30896852844374684,
+            "w": 0.9509073943287597
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "41",
+          "name": "Stairs Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 3,
+                  "y": 1,
+                  "z": 0.1
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 4.616985321044922,
+            "y": 2.037601947784424,
+            "z": 1.7099517583847046
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "42",
+          "name": "Underbridge Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.1,
+                  "y": 1,
+                  "z": 2
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1.6580086946487427,
+            "y": 1.8611345291137695,
+            "z": -0.20265181362628937
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "43",
+          "name": "Stairs Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 3,
+                  "y": 1,
+                  "z": 0.1
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1.9247148036956787,
+            "y": 1.183653473854065,
+            "z": 3.5492115020751953
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "44",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 1
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 9.358979225158691,
+            "y": 3.8324480056762695,
+            "z": 2.3143045902252197
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "12",
+      "name": "Start",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": 0.6217883825302124,
+        "y": 0.964989423751831,
+        "z": 1.7574098110198975
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "3",
+      "name": "Teleporters",
+      "children": [
+        {
+          "id": "49",
+          "name": "Nightclub Street",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -7.754952430725098,
+            "y": 3.396160125732422,
+            "z": -0.38148847222328186
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.9630572347052063,
+            "z": 0,
+            "w": -0.26929678146494057
+          },
+          "scale": {
+            "x": 2.2,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "18",
+      "name": "Pedestrian Paths",
+      "children": [
+        {
+          "id": "19",
+          "name": "Group 1",
+          "children": [
+            {
+              "id": "22",
+              "name": "1",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 9.661505699157715,
+                "y": 3.200000047683716,
+                "z": -0.43775150179862976
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "21",
+              "name": "2",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -0.6957372426986694,
+                "y": 3.200000047683716,
+                "z": 0.6486318111419678
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "20",
+              "name": "3",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -7.740781784057617,
+                "y": 3.200000047683716,
+                "z": -0.1397608518600464
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "23",
+          "name": "Group 2",
+          "children": [
+            {
+              "id": "26",
+              "name": "1",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 9.588459014892578,
+                "y": 3.200000047683716,
+                "z": 0.6886464357376099
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "25",
+              "name": "2",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 3.630324363708496,
+                "y": 3.200000047683716,
+                "z": -0.47885388135910034
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "27",
+              "name": "3",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -8.051204681396484,
+                "y": 3.200000047683716,
+                "z": 0.29739415645599365
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "28",
+          "name": "Group 3",
+          "children": [
+            {
+              "id": "29",
+              "name": "1",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -8.48659896850586,
+                "y": 3.200000047683716,
+                "z": 0.153239443898201
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "30",
+              "name": "2",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 1.9058725833892822,
+                "y": 3.200000047683716,
+                "z": 0.6600229144096375
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "31",
+              "name": "3",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 9.396367073059082,
+                "y": 3.200000047683716,
+                "z": -0.1674995869398117
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "52",
+      "name": "Dancers Path",
+      "children": [
+        {
+          "id": "53",
+          "name": "1",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -6.6673102378845215,
+            "y": 3.200000047683716,
+            "z": 0.25580087304115295
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "54",
+          "name": "2",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -7.497537612915039,
+            "y": 3.149834156036377,
+            "z": -0.5821681618690491
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "50",
+      "name": "Dancer",
+      "children": [
+        {
+          "id": "51",
+          "name": "Sprite",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "175",
+                "animationId": "0",
+                "horizontalFlip": true,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PedestrianBehavior",
+            "propertyValues": {
+              "waypointGroup": {
+                "type": "string",
+                "value": "Dancers Path"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 3.2,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "55",
+      "name": "Dancer",
+      "children": [
+        {
+          "id": "56",
+          "name": "Sprite",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "153",
+                "animationId": "0",
+                "horizontalFlip": true,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PedestrianBehavior",
+            "propertyValues": {
+              "waypointGroup": {
+                "type": "string",
+                "value": "Dancers Path"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 2,
+        "y": 3.200000047683716,
+        "z": -0.3867834508419037
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "57",
+      "name": "Dancer",
+      "children": [
+        {
+          "id": "58",
+          "name": "Sprite",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "153",
+                "animationId": "0",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PedestrianBehavior",
+            "propertyValues": {
+              "waypointGroup": {
+                "type": "string",
+                "value": "Dancers Path"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -1.8415216207504272,
+        "y": 3.200000047683716,
+        "z": -0.3455321490764618
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "59",
+      "name": "Dancer",
+      "children": [
+        {
+          "id": "60",
+          "name": "Sprite",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "174",
+                "animationId": "0",
+                "horizontalFlip": true,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PedestrianBehavior",
+            "propertyValues": {
+              "waypointGroup": {
+                "type": "string",
+                "value": "Dancers Path"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 4.297284126281738,
+        "y": 3.200000047683716,
+        "z": 0.11508709192276001
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "61",
+      "name": "Dancer",
+      "children": [
+        {
+          "id": "62",
+          "name": "Sprite",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "159",
+                "animationId": "0",
+                "horizontalFlip": true,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PedestrianBehavior",
+            "propertyValues": {
+              "waypointGroup": {
+                "type": "string",
+                "value": "Dancers Path"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 6.825407981872559,
+        "y": 3.200000047683716,
+        "z": -0.4811827540397644
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "63",
+      "name": "Dancer",
+      "children": [
+        {
+          "id": "64",
+          "name": "Sprite",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "179",
+                "animationId": "0",
+                "horizontalFlip": true,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PedestrianBehavior",
+            "propertyValues": {
+              "waypointGroup": {
+                "type": "string",
+                "value": "Dancers Path"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 9.368714332580566,
+        "y": 3.200000047683716,
+        "z": 0.1551823914051056
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

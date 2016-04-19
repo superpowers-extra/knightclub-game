@@ -1,0 +1,912 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Main",
+      "children": [
+        {
+          "id": "1",
+          "name": "Camera",
+          "children": [],
+          "components": [
+            {
+              "type": "Camera",
+              "config": {
+                "formatVersion": 1,
+                "mode": "perspective",
+                "fov": 35,
+                "orthographicScale": 10,
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1,
+                  "height": 1
+                },
+                "depth": 0,
+                "nearClippingPlane": 0.1,
+                "farClippingPlane": 1000
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CameraBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 11.39155101776123,
+            "y": 4.669751167297363,
+            "z": 4.409089088439941
+          },
+          "orientation": {
+            "x": -0.023514887820457728,
+            "y": 0.3753160230216669,
+            "z": 0.009525139631486913,
+            "w": 0.9265496248248082
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "3",
+      "name": "Scenery",
+      "children": [
+        {
+          "id": "20",
+          "name": "Model",
+          "children": [],
+          "components": [
+            {
+              "type": "ModelRenderer",
+              "config": {
+                "formatVersion": 1,
+                "modelAssetId": "268",
+                "animationId": "",
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -1.3145768642425537,
+            "y": 0.5950899124145508,
+            "z": -4.458323001861572
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1.3,
+            "y": 1.3,
+            "z": 1.3
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "2",
+      "name": "Physics",
+      "children": [
+        {
+          "id": "22",
+          "name": "Floor",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 8,
+                  "y": 0.5,
+                  "z": 4
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 1.425857663154602,
+            "z": -5.1551690101623535
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "23",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 6,
+                  "y": 4,
+                  "z": 0.5
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 2.9115591049194336,
+            "y": 4.89435338973999,
+            "z": -6.091803073883057
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "24",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 6,
+                  "y": 4,
+                  "z": 0.5
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 2.9115591049194336,
+            "y": 4.89435338973999,
+            "z": -6.091803073883057
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "25",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 8,
+                  "y": 4,
+                  "z": 0.5
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -0.04828422889113426,
+            "y": 4.043933868408203,
+            "z": -2.5770978927612305
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "26",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 4,
+                  "z": 4
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -7.547281742095947,
+            "y": 4.043933868408203,
+            "z": -6.079912185668945
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "27",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 4,
+                  "z": 4
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 7.431117534637451,
+            "y": 4.043933868408203,
+            "z": -6.079912185668945
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "28",
+          "name": "Cell Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.25,
+                  "y": 4,
+                  "z": 4
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 3.3690409660339355,
+            "y": 4.043933868408203,
+            "z": -6.079912185668945
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "29",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 2,
+                  "y": 4,
+                  "z": 0.5
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -6.693655490875244,
+            "y": 4.043933868408203,
+            "z": -5.888413906097412
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "8",
+      "name": "Teleporters",
+      "children": [
+        {
+          "id": "15",
+          "name": "Castle Courtyard",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -3.903791666030884,
+            "y": 2.452629327774048,
+            "z": -5.798476219177246
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.9999619230641713,
+            "z": 0,
+            "w": 0.008726535498373897
+          },
+          "scale": {
+            "x": 2,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "10",
+      "name": "Characters",
+      "children": [
+        {
+          "id": "16",
+          "name": "Horace",
+          "children": [
+            {
+              "id": "17",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "1",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "JailedHoraceBehavior",
+                "propertyValues": {}
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 4.885954856872559,
+            "y": 1.9076560735702515,
+            "z": -5.2753496170043945
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "18",
+          "name": "Dungeon Guard",
+          "children": [
+            {
+              "id": "19",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "159",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "dungeon.TODO"
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.4938286542892456,
+            "y": 2.0890419483184814,
+            "z": -4.980026721954346
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "21",
+      "name": "Overlay",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "274",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 4.316633224487305,
+        "y": 3.1818485260009766,
+        "z": -1.6621711254119873
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0.5150531849980621,
+        "z": 0,
+        "w": 0.8571582119423559
+      },
+      "scale": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

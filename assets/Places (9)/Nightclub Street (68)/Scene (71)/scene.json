@@ -1,0 +1,2109 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Main",
+      "children": [
+        {
+          "id": "1",
+          "name": "Camera",
+          "children": [],
+          "components": [
+            {
+              "type": "Camera",
+              "config": {
+                "formatVersion": 1,
+                "mode": "perspective",
+                "fov": 30,
+                "orthographicScale": 10,
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1,
+                  "height": 1
+                },
+                "depth": 0,
+                "nearClippingPlane": 0.1,
+                "farClippingPlane": 1000
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CameraBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 4.467483043670654,
+            "y": 29.366954803466797,
+            "z": 25.772918701171875
+          },
+          "orientation": {
+            "x": -0.3953627411369739,
+            "y": 0.05504590036103297,
+            "z": -0.022979019013345637,
+            "w": 0.9165861715751502
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "BodyJailedBehavior",
+            "propertyValues": {}
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "3",
+      "name": "Scenery",
+      "children": [
+        {
+          "id": "33",
+          "name": "Model",
+          "children": [],
+          "components": [
+            {
+              "type": "ModelRenderer",
+              "config": {
+                "formatVersion": 1,
+                "modelAssetId": "122",
+                "animationId": "",
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1.0535866022109985,
+            "y": -0.858761191368103,
+            "z": -0.28612950444221497
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "22",
+          "name": "Door",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "81",
+                "animationId": "",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "NightclubDoorBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0.5475677251815796,
+            "y": 0.10784462839365005,
+            "z": -3.4873764514923096
+          },
+          "orientation": {
+            "x": -0.000038257767014702454,
+            "y": 0.02982322967528085,
+            "z": -0.001282246035914401,
+            "w": 0.9995543653814845
+          },
+          "scale": {
+            "x": 1.6,
+            "y": 1.6,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "32",
+          "name": "Coach",
+          "children": [
+            {
+              "id": "60",
+              "name": "Prisoner",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "1",
+                    "animationId": "",
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0.35,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "ModelRenderer",
+              "config": {
+                "formatVersion": 1,
+                "modelAssetId": "140",
+                "animationId": "",
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -3.7423782348632812,
+            "y": 0,
+            "z": 0.8038280606269836
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.6449656861071024,
+            "z": 0,
+            "w": 0.7642115225301004
+          },
+          "scale": {
+            "x": 0.9999999853100228,
+            "y": 1,
+            "z": 0.9999999853100228
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "61",
+          "name": "Coach Path",
+          "children": [
+            {
+              "id": "64",
+              "name": "Waypoint",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 3.2488760948181152,
+                "y": 0,
+                "z": 0.5182703733444214
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "62",
+              "name": "Waypoint",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 5.258408069610596,
+                "y": 0,
+                "z": -0.8308181166648865
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "63",
+              "name": "Waypoint",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 6.461983680725098,
+                "y": 0,
+                "z": -3.845912456512451
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "65",
+              "name": "Waypoint",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 7.864984035491943,
+                "y": 0,
+                "z": -9.687719345092773
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -0.0038180791307240725
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "2",
+      "name": "Physics",
+      "children": [
+        {
+          "id": "17",
+          "name": "Nightclub Door",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 1,
+                  "y": 0.5,
+                  "z": 0.2
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.5872183442115784,
+            "y": 0.5,
+            "z": -3.147650957107544
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "35",
+          "name": "Nightclub",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.7,
+                  "y": 0.5,
+                  "z": 1
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -0.8585019111633301,
+            "y": 0.5,
+            "z": -3.630305528640747
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.1588462502076838,
+            "z": 0,
+            "w": 0.9873033291498908
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "36",
+          "name": "Nightclub",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.7,
+                  "y": 0.5,
+                  "z": 1
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1.9609864950180054,
+            "y": 0.5,
+            "z": -3.725670337677002
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.22516708800067803,
+            "z": 0,
+            "w": 0.9743201642758771
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "37",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 4
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -6.419349193572998,
+            "y": 0.5,
+            "z": 7.058836460113525
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.4671394832823798,
+            "z": 0,
+            "w": 0.8841836459452753
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "38",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 6
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -8.37089729309082,
+            "y": 0.8382301926612854,
+            "z": -0.7721531987190247
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.03230099932552824,
+            "z": 0,
+            "w": 0.9994781891044592
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "40",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 2
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -2.622342586517334,
+            "y": 0.5,
+            "z": -10.237652778625488
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.5329619066489496,
+            "z": 0,
+            "w": 0.846139235960181
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "41",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 2
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1.1195615530014038,
+            "y": 0.5,
+            "z": -11.098078727722168
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.730010989258812,
+            "z": 0,
+            "w": 0.6834354299043859
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "42",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 2
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 4.722279071807861,
+            "y": 0.5,
+            "z": -9.504605293273926
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.8050636746433547,
+            "z": 0,
+            "w": 0.5931884092396914
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "43",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 2
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 9.64676570892334,
+            "y": 0.5,
+            "z": -6.778206825256348
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.9990778933363273,
+            "z": 0,
+            "w": -0.04293446765210474
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "44",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 3
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 9.674367904663086,
+            "y": 0.5,
+            "z": -2.16290283203125
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.998902448709297,
+            "z": 0,
+            "w": 0.046838919674084045
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "45",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 5
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 7.496408939361572,
+            "y": 0.5,
+            "z": 4.8226776123046875
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.977598723916518,
+            "z": 0,
+            "w": 0.21047742370559652
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "50",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 1,
+                  "y": 0.5,
+                  "z": 2
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -7.845918655395508,
+            "y": 0.7886741161346436,
+            "z": -4.636287212371826
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.24174956524473648,
+            "z": 0,
+            "w": 0.9703386724016769
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "56",
+          "name": "Nightclub",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.7,
+                  "y": 0.5,
+                  "z": 3
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 2.8480098247528076,
+            "y": 0.5,
+            "z": -8.713443756103516
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.10906131656751773,
+            "z": 0,
+            "w": 0.9940350219756693
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "57",
+          "name": "Nightclub",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 1.5
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 3.149075984954834,
+            "y": 0.5,
+            "z": -4.7468037605285645
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.18946313699468548,
+            "z": 0,
+            "w": 0.981887839079796
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "58",
+          "name": "Nightclub",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 1.7
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -2.0236051082611084,
+            "y": 0.5289682745933533,
+            "z": -4.673442363739014
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.19039220492875922,
+            "z": 0,
+            "w": 0.9817081080601688
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "59",
+          "name": "Nightclub",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.7,
+                  "y": 0.5,
+                  "z": 2
+                },
+                "radius": 2,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -2.306509494781494,
+            "y": 0.5,
+            "z": -8.109539031982422
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.03936656721239691,
+            "z": 0,
+            "w": 0.9992248391807721
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "67",
+          "name": "Lamppost",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "cylinder",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 1,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 90,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 0.5
+                },
+                "radius": 0.2,
+                "height": 2,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -4.478696346282959,
+            "y": 0.11744702607393265,
+            "z": -0.5330696702003479
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "8",
+      "name": "Teleporters",
+      "children": [
+        {
+          "id": "46",
+          "name": "Town Entrance",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0.9699786901473999,
+            "y": 0.10000000149011612,
+            "z": 8.843535423278809
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 9,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        },
+        {
+          "id": "47",
+          "name": "Nightclub",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0.4797559976577759,
+            "y": 0.10000000149011612,
+            "z": -3.744934320449829
+          },
+          "orientation": {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "w": 6.123234262925839e-17
+          },
+          "scale": {
+            "x": 2,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        },
+        {
+          "id": "48",
+          "name": "Castle Bridge",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 7.8810625076293945,
+            "y": 0.10000000149011612,
+            "z": -9.411371231079102
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.9889950492723404,
+            "z": 0,
+            "w": 0.1479486446728779
+          },
+          "scale": {
+            "x": 3,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        },
+        {
+          "id": "49",
+          "name": "Market",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -6.282045841217041,
+            "y": 0.10000000149011612,
+            "z": -8.384671211242676
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.9548743875139282,
+            "z": 0,
+            "w": -0.29700990914940967
+          },
+          "scale": {
+            "x": 3.999999869162776,
+            "y": 1,
+            "z": 0.999999967290694
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "10",
+      "name": "Characters",
+      "children": [
+        {
+          "id": "11",
+          "name": "Bouncer",
+          "children": [
+            {
+              "id": "12",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "171",
+                    "animationId": "0",
+                    "horizontalFlip": true,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "BouncerBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 2.4449679851531982,
+            "y": 0,
+            "z": -1.2751978635787964
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "18",
+          "name": "Beauty 1",
+          "children": [
+            {
+              "id": "19",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "154",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "nightclubStreet.beautiful.0"
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 2
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "20",
+          "name": "Beauty 2",
+          "children": [
+            {
+              "id": "21",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "162",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "nightclubStreet.beautiful.1"
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -3.7224068641662598,
+            "y": 0,
+            "z": -3.45622181892395
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "52",
+          "name": "Random 1",
+          "children": [
+            {
+              "id": "53",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "164",
+                    "animationId": null,
+                    "horizontalFlip": true,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "nightclubStreet.deadInside"
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 7.640265464782715,
+            "y": 0,
+            "z": 0.23705831170082092
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "54",
+          "name": "Random 2",
+          "children": [
+            {
+              "id": "55",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "156",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "nightclubStreet.duckFriends;nightclubStreet.duckYoureADuck;nightclubStreet.duckPoint"
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -2.704421043395996,
+            "y": 0,
+            "z": -1.722010850906372
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "30",
+      "name": "Events",
+      "children": [
+        {
+          "id": "31",
+          "name": "Go To Night Club",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "97",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "00ff00",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "GoToNightClubBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -5.6146063804626465,
+            "y": 0.0921325758099556,
+            "z": -7.592473030090332
+          },
+          "orientation": {
+            "x": -0.6719579978068093,
+            "y": 0.22016458085141116,
+            "z": 0.22016458085141122,
+            "w": 0.6719579978068093
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "66",
+      "name": "Halo",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "141",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "HaloBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 0.6355514526367188,
+        "y": 0.12221362441778183,
+        "z": -2.5740928649902344
+      },
+      "orientation": {
+        "x": -0.6874902295032211,
+        "y": 0.027121155329031612,
+        "z": 0.028605735818963578,
+        "w": 0.7251229818012224
+      },
+      "scale": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

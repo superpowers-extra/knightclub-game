@@ -2,18 +2,23 @@ abstract class InteractionBehavior extends Sup.Behavior {
   
   // @hide
   position: Sup.Math.Vector3;
-  spritePath: string;
-  canShapeShift = false;
+  personId: string;
+
+  isAreaTrigger = false;
+  width: number;
+  depth: number;
+  angle: number;
   
   awake() {
     Game.interactions.push(this);
-  }
-
-  start() {
-    this.position = this.actor.getLocalPosition();
     
-    this.spritePath = this.actor.getChild("Sprite").spriteRenderer.getSprite().path;
-    if (this.spritePath === PlayerBehavior.spritePath) this.actor.destroy();
+    this.position = this.actor.getLocalPosition();
+    if (this.isAreaTrigger) {
+      this.width = this.actor.getLocalScaleX();
+      this.depth = this.actor.getLocalScaleY();
+      this.angle = this.actor.getLocalEulerY();
+      this.actor.spriteRenderer.destroy();
+    }
   }
 
   onDestroy() {
@@ -22,8 +27,10 @@ abstract class InteractionBehavior extends Sup.Behavior {
   }
 
   finish() {
-    Game.player.activeInteraction = null;
+    Game.player.finishInteraction();
   }
 
   abstract action();
+
+  tryShapeShift() { return false; };
 }

@@ -11,24 +11,29 @@ class QuestManagerBehavior extends Sup.Behavior {
     this.setup();
   }
 
-  setMainObjective(mainObjectiveId: string, currentGoalId: string) {
-    Game.quest.mainObjectiveId = mainObjectiveId;
-    Game.quest.currentGoalId = currentGoalId;
+  setMainObjective(mainObjective: Game.Objectives, currentGoal: Game.Goals, callback?: Function) {
+    Game.quest.mainObjective = mainObjective;
+    Game.quest.currentGoal = currentGoal;
     this.setup();
     this.currentGoal.setOpacity(0);
-    this.animateMainObjective(() => { this.animateCurrentGoal(); });
-    // TODO: Play sound
+    this.animateMainObjective(() => {
+      this.animateCurrentGoal(() => {
+         if (callback != null) callback();
+      });
+    });
+    Sup.Audio.playSound("SFX/Quest/Objective");
   }
 
-  setCurrentGoal(currentGoalId: string) {
-    Game.quest.currentGoalId = currentGoalId;
+  setCurrentGoal(currentGoal: Game.Goals) {
+    Game.quest.currentGoal = currentGoal;
+    this.setup();
     this.animateCurrentGoal();
-    // TODO: Play sound
+    Sup.Audio.playSound("SFX/Quest/Goal");
   }
 
   private animateMainObjective(callback: Function) {
-    new Sup.Tween(this.actor, { opacity: 0, x: 2 })
-      .to({ opacity: 1, x: 0 }, 1000)
+    new Sup.Tween(this.actor, { opacity: 0, x: 2.5 })
+      .to({ opacity: 1, x: 0.5 }, 1000)
       .easing(TWEEN.Easing.Bounce.Out)
       .onUpdate((state) => {
         this.mainObjective.setOpacity(state.opacity).actor.setLocalX(state.x);
@@ -36,8 +41,8 @@ class QuestManagerBehavior extends Sup.Behavior {
   }
 
   private animateCurrentGoal(callback?: Function) {
-    new Sup.Tween(this.actor, { opacity: 0, y: -2 })
-      .to({ opacity: 1, y: -1 }, 1000)
+    new Sup.Tween(this.actor, { opacity: 0, y: -2.25 })
+      .to({ opacity: 1, y: -1.25 }, 1000)
       .easing(TWEEN.Easing.Quintic.Out)
       .onUpdate((state) => {
         this.currentGoal.setOpacity(state.opacity).actor.setLocalY(state.y);
@@ -45,10 +50,10 @@ class QuestManagerBehavior extends Sup.Behavior {
   }
 
   private setup() {
-    const mainObjectiveText = Game.quest.mainObjectiveId != null ? Game.getText(Game.quest.mainObjectiveId) : "";
-    this.mainObjective.setText(mainObjectiveText);
+    const mainObjectiveText = Game.quest.mainObjective != null ? Game.getText(`objectives.${Game.Objectives[Game.quest.mainObjective]}`) : "";
+    this.mainObjective.setText(mainObjectiveText.toUpperCase());
 
-    const currentGoalText = Game.quest.currentGoalId != null ? Game.getText(Game.quest.currentGoalId) : "";
+    const currentGoalText = Game.quest.currentGoal != null ? Game.getText(`goals.${Game.Goals[Game.quest.currentGoal]}`) : "";
     this.currentGoal.setText(currentGoalText);
   }
 }

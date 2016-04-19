@@ -1,7 +1,34 @@
 /*
-  - NPCs
-  - langue FR/EN
-  - postprocess effect
+  TODO
+    - dungeon courtyard + burrito stand
+    - dungeon + ending
+    - end screen
+
+    - talking / party sound for inside the nightclub
+    - voices
+
+  CHEATS CODES:
+    NUMPAD0: Nightclub Street + getInTheNightclub
+    NUMPAD1: Nightclub Street + lowerTheBridge
+    NUMPAD2: Castle Bridge + enterTheCastle
+    ...  
+  
+  PLACES:
+  - town entrance
+  - nightclub street
+  - nightclub
+  - bascule bridge (from nightclub street)
+  - market (from nightclub street)
+    - sewers entrance (from market)
+  - sewers
+  - fitness club (from market)
+  - castle courtyard (from sewers)
+    (has the warden tower (can't enter) + toilets next to it)
+    (pasta burrito stand)
+  - dungeon (from courtyard)
+  
+  
+  QUEST:
   
   NIGHT-TIME FUN
   - Go to the nightclub
@@ -15,9 +42,9 @@
 
   GET MY BODY BACK
   - Go to the castle
-  Bridge is broken, can't enter
-  - Fix the bridge
-  Find the guy supposed to fix the bridge and shapeshift into him
+  Bridge is up, can't enter
+  - Lower the bridge
+  Find the guy supposed to lower the bridge and shapeshift into him
   - Enter the castle
   Guard won't let you in
   - Charm the guard into letting you in the castle
@@ -26,6 +53,8 @@
   Market closes down, opening up a new passage to the sewers
   - Find another entrance to the castle
   Big opening into the sewer has bars
+  
+  INTO THE SEWERS
   - Open the way to the sewers
   Find a big guy at the fitness club that can pull the bars to create an entrance
   Most characters are too afraid to enter in the dark

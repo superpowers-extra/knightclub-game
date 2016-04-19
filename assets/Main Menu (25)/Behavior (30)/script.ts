@@ -7,7 +7,7 @@ class MainMenuBehavior extends Sup.Behavior {
     if (Sup.Input.wasKeyJustPressed("LEFT")) this.setLanguage("en");
     if (Sup.Input.wasKeyJustPressed("RIGHT")) this.setLanguage("fr");
     
-    if (Sup.Input.wasKeyJustPressed("RETURN") || Sup.Input.wasKeyJustPressed("X")) Game.start();
+    if (Sup.Input.wasKeyJustPressed("RETURN") || Sup.Input.wasKeyJustPressed("X") || Sup.Input.wasKeyJustPressed("SPACE")) Game.start();
   }
   
   setLanguage(lang: string) {

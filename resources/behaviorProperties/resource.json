@@ -2,7 +2,7 @@
   "behaviors": {
     "PlayerBehavior": {
       "scriptId": "4",
-      "line": 8,
+      "line": 12,
       "parentBehavior": null,
       "properties": [
         {
@@ -13,43 +13,23 @@
     },
     "CameraBehavior": {
       "scriptId": "5",
-      "line": 0,
+      "line": 11,
       "parentBehavior": null,
       "properties": [
         {
-          "name": "effect",
-          "type": "any"
+          "name": "followForward",
+          "type": "boolean"
         }
       ]
     },
     "TeleporterBehavior": {
       "scriptId": "13",
-      "line": 6,
-      "parentBehavior": null,
+      "line": 0,
+      "parentBehavior": "InteractionBehavior",
       "properties": [
         {
-          "name": "place",
-          "type": "string"
-        },
-        {
-          "name": "target",
-          "type": "string"
-        },
-        {
-          "name": "angle",
-          "type": "number"
-        },
-        {
-          "name": "width",
-          "type": "number"
-        },
-        {
-          "name": "depth",
-          "type": "number"
-        },
-        {
-          "name": "position",
-          "type": "Sup.Math.Vector3"
+          "name": "isAreaTrigger",
+          "type": "boolean"
         }
       ]
     },
@@ -58,29 +38,6 @@
       "line": 0,
       "parentBehavior": null,
       "properties": []
-    },
-    "CharacterBehavior": {
-      "scriptId": "35",
-      "line": 0,
-      "parentBehavior": "InteractionBehavior",
-      "properties": [
-        {
-          "name": "name",
-          "type": "string"
-        },
-        {
-          "name": "lineId",
-          "type": "string"
-        },
-        {
-          "name": "canShapeShift",
-          "type": "boolean"
-        },
-        {
-          "name": "isSpeaking",
-          "type": "boolean"
-        }
-      ]
     },
     "InteractionBehavior": {
       "scriptId": "38",
@@ -92,12 +49,24 @@
           "type": "Sup.Math.Vector3"
         },
         {
-          "name": "spritePath",
+          "name": "personId",
           "type": "string"
         },
         {
-          "name": "canShapeShift",
+          "name": "isAreaTrigger",
           "type": "boolean"
+        },
+        {
+          "name": "width",
+          "type": "number"
+        },
+        {
+          "name": "depth",
+          "type": "number"
+        },
+        {
+          "name": "angle",
+          "type": "number"
         }
       ]
     },
@@ -113,11 +82,7 @@
       "parentBehavior": null,
       "properties": [
         {
-          "name": "charsPerLine",
-          "type": "number"
-        },
-        {
-          "name": "framesPerChar",
+          "name": "letterIndex",
           "type": "number"
         }
       ]
@@ -136,7 +101,7 @@
     },
     "PedestriansSpawnerBehavior": {
       "scriptId": "59",
-      "line": 2,
+      "line": 11,
       "parentBehavior": null,
       "properties": [
         {
@@ -145,8 +110,174 @@
         }
       ]
     },
-    "PedestriansBehavior": {
+    "BouncerBehavior": {
+      "scriptId": "73",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": [
+        {
+          "name": "granted",
+          "type": "boolean"
+        }
+      ]
+    },
+    "CharacterBehavior": {
+      "scriptId": "35",
+      "line": 0,
+      "parentBehavior": "InteractionBehavior",
+      "properties": []
+    },
+    "PedestrianBehavior": {
       "scriptId": "66",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": [
+        {
+          "name": "hasCollision",
+          "type": "boolean"
+        },
+        {
+          "name": "waypointGroup",
+          "type": "string"
+        }
+      ]
+    },
+    "NightclubDoorBehavior": {
+      "scriptId": "83",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "IntroBehavior": {
+      "scriptId": "74",
+      "line": 0,
+      "parentBehavior": "InteractionBehavior",
+      "properties": []
+    },
+    "GoToNightClubBehavior": {
+      "scriptId": "95",
+      "line": 0,
+      "parentBehavior": "InteractionBehavior",
+      "properties": [
+        {
+          "name": "isAreaTrigger",
+          "type": "boolean"
+        }
+      ]
+    },
+    "BridgeButtonBehavior": {
+      "scriptId": "96",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": [
+        {
+          "name": "lowered",
+          "type": "boolean"
+        },
+        {
+          "name": "isMoving",
+          "type": "boolean"
+        }
+      ]
+    },
+    "BodyJailedBehavior": {
+      "scriptId": "100",
+      "line": 0,
+      "parentBehavior": "InteractionBehavior",
+      "properties": []
+    },
+    "NightclubBehavior": {
+      "scriptId": "101",
+      "line": 0,
+      "parentBehavior": "InteractionBehavior",
+      "properties": []
+    },
+    "BridgeOperatorBehavior": {
+      "scriptId": "106",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": []
+    },
+    "OldBodyBehavior": {
+      "scriptId": "109",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": [
+        {
+          "name": "hasCollision",
+          "type": "boolean"
+        }
+      ]
+    },
+    "BridgeGuardBehavior": {
+      "scriptId": "117",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": []
+    },
+    "SingleLineBehavior": {
+      "scriptId": "138",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": [
+        {
+          "name": "lineId",
+          "type": "string"
+        },
+        {
+          "name": "noShapeShiftLineId",
+          "type": "string"
+        }
+      ]
+    },
+    "HaloBehavior": {
+      "scriptId": "142",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "nightclubTimer",
+          "type": "number"
+        }
+      ]
+    },
+    "SewersEntranceBehavior": {
+      "scriptId": "214",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": [
+        {
+          "name": "hasCollision",
+          "type": "boolean"
+        }
+      ]
+    },
+    "WardenDoorBehavior": {
+      "scriptId": "261",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": []
+    },
+    "OuthouseDoorBehavior": {
+      "scriptId": "262",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": []
+    },
+    "JailedHoraceBehavior": {
+      "scriptId": "263",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": []
+    },
+    "DowieBehavior": {
+      "scriptId": "270",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": []
+    },
+    "RandomLineBehavior": {
+      "scriptId": "276",
       "line": 0,
       "parentBehavior": "CharacterBehavior",
       "properties": [
@@ -155,6 +286,12 @@
           "type": "string"
         }
       ]
+    },
+    "TitleBehavior": {
+      "scriptId": "285",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }

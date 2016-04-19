@@ -1,0 +1,185 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Camera",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "formatVersion": 1,
+            "mode": "perspective",
+            "fov": 25,
+            "orthographicScale": 10,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            },
+            "depth": 0,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 1000
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "TitleBehavior",
+            "propertyValues": {}
+          },
+          "id": "2"
+        }
+      ],
+      "position": {
+        "x": 5.502594947814941,
+        "y": 13.318717956542969,
+        "z": 30.466840744018555
+      },
+      "orientation": {
+        "x": -0.14887345291195345,
+        "y": 0.08899207648010107,
+        "z": -0.0029060257634194314,
+        "w": 0.9848394130978664
+      },
+      "scale": {
+        "x": 1.0000000064403165,
+        "y": 0.9999999710729373,
+        "z": 0.9999999823043391
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "32",
+      "name": "Map",
+      "children": [],
+      "components": [
+        {
+          "type": "ModelRenderer",
+          "config": {
+            "formatVersion": 1,
+            "modelAssetId": "103",
+            "animationId": "",
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 3.5,
+        "z": 0
+      },
+      "orientation": {
+        "x": -0.050610447005756946,
+        "y": 0,
+        "z": 0,
+        "w": 0.9987184687376843
+      },
+      "scale": {
+        "x": 1,
+        "y": 0.9999999943023661,
+        "z": 0.9999999943023661
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "66",
+      "name": "Title",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "286",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 3.458319664001465,
+        "y": 7.266891956329346,
+        "z": -0.9135203957557678
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 0.4,
+        "y": 0.4,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "67",
+      "name": "Press X to start",
+      "children": [],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "144",
+            "text": "Press X to start",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": null,
+            "color": null,
+            "overrideOpacity": false,
+            "opacity": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 3.2888569831848145,
+        "y": 4.904072284698486,
+        "z": -0.11082472652196884
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

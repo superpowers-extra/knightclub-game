@@ -1,15 +1,16 @@
 class AnimatedTextBehavior extends Sup.Behavior {
-  charsPerLine = 32;
-  framesPerChar = 2;
+  private charsPerLine = 37;
+  private framesPerChar = 2;
 
   private text = "";
-  private letterIndex = 0;
+  letterIndex = 0;
   private timer = 0;
   private blinkTimer = 0;
   private blinkDuration = 4;
 
   start() {
-    this.setText(this.actor.textRenderer.getText());
+    // TODO: is this required?
+    // this.setText(this.actor.textRenderer.getText());
   }
 
   clear() {
@@ -92,6 +93,7 @@ class AnimatedTextBehavior extends Sup.Behavior {
         this.letterIndex++;
         this.blinkTimer = (this.blinkTimer + 1) % this.blinkDuration;
         this.actor.textRenderer.setText(this.text.slice(0, this.letterIndex).replace(/\|/g, "") + (this.blinkTimer < this.blinkDuration / 2 ? "_" : ""));
+        if (this.text[this.letterIndex] !== "|") Sup.Audio.playSound("SFX/Text", 0.1);
       }
     } else if (this.blinkTimer < this.blinkDuration / 2) {
       this.blinkTimer = this.blinkDuration;

@@ -11,15 +11,16 @@ class DialogBehavior extends Sup.Behavior {
     this.animatedText = this.actor.getChild("Text").getBehavior(AnimatedTextBehavior);
   }
   
-  show(speakerId: string, text: string) {
+  show(speakerId: string, textId: string) {
     this.actor.setVisible(true);
-    Game.questManager.setMainObjective("a", "b");
     
-    this.speaker = Game.getText(speakerId);
-    const portrait = Sup.get(`HUD/Portraits/${speakerId}`, Sup.Sprite, { ignoreMissing: true });
+    let speakerNameId = speakerId.slice(speakerId.lastIndexOf("/") + 1);
+    if (Text[Game.language].characters[speakerNameId] == null) speakerNameId = "Some alien";
+    this.speaker = Game.getText(`characters.${speakerNameId}`);
+    const portrait = Sup.get(`Characters/${speakerId}`, Sup.Sprite, { ignoreMissing: true });
     this.portraitRenderer.setSprite(portrait);
 
-    this.animatedText.setText(`${this.speaker.toUpperCase()}: ${text}`, this.speaker.length + 2);
+    this.animatedText.setText(`${this.speaker.toUpperCase()}: ${Game.getText(textId)}`, this.speaker.length + 2);
   }
 
   hide() {

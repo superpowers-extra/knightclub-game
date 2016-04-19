@@ -33,7 +33,7 @@
           "position": {
             "x": 0,
             "y": 0,
-            "z": 10
+            "z": 5
           },
           "orientation": {
             "x": 0,
@@ -57,7 +57,52 @@
             {
               "id": "1",
               "name": "Frame",
-              "children": [],
+              "children": [
+                {
+                  "id": "9",
+                  "name": "Portrait",
+                  "children": [],
+                  "components": [
+                    {
+                      "type": "SpriteRenderer",
+                      "config": {
+                        "formatVersion": 1,
+                        "spriteAssetId": "158",
+                        "animationId": null,
+                        "horizontalFlip": false,
+                        "verticalFlip": false,
+                        "castShadow": false,
+                        "receiveShadow": false,
+                        "color": "ffffff",
+                        "overrideOpacity": false,
+                        "opacity": null,
+                        "materialType": "basic",
+                        "shaderAssetId": null
+                      },
+                      "id": "0"
+                    }
+                  ],
+                  "position": {
+                    "x": -9,
+                    "y": 1.55,
+                    "z": 0.1
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                }
+              ],
               "components": [
                 {
                   "type": "SpriteRenderer",
@@ -82,50 +127,6 @@
                 "x": 0,
                 "y": 0,
                 "z": -0.1
-              },
-              "orientation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
-              },
-              "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-              },
-              "visible": true,
-              "layer": 0,
-              "prefab": null
-            },
-            {
-              "id": "2",
-              "name": "Portrait",
-              "children": [],
-              "components": [
-                {
-                  "type": "SpriteRenderer",
-                  "config": {
-                    "formatVersion": 1,
-                    "spriteAssetId": null,
-                    "animationId": null,
-                    "horizontalFlip": false,
-                    "verticalFlip": false,
-                    "castShadow": false,
-                    "receiveShadow": false,
-                    "color": "ffffff",
-                    "overrideOpacity": false,
-                    "opacity": null,
-                    "materialType": "basic",
-                    "shaderAssetId": null
-                  },
-                  "id": "0"
-                }
-              ],
-              "position": {
-                "x": -8,
-                "y": 0,
-                "z": 0
               },
               "orientation": {
                 "x": 0,
@@ -172,7 +173,7 @@
                 }
               ],
               "position": {
-                "x": -6.7,
+                "x": -9.2,
                 "y": 1.2,
                 "z": 0
               },
@@ -235,7 +236,7 @@
                   "type": "TextRenderer",
                   "config": {
                     "formatVersion": 2,
-                    "fontAssetId": "48",
+                    "fontAssetId": "144",
                     "text": "MAIN OBJECTIVE",
                     "alignment": "left",
                     "verticalAlignment": "center",
@@ -248,8 +249,8 @@
                 }
               ],
               "position": {
-                "x": 0,
-                "y": 0,
+                "x": 0.5,
+                "y": -0.75,
                 "z": 0
               },
               "orientation": {
@@ -276,12 +277,12 @@
                   "type": "TextRenderer",
                   "config": {
                     "formatVersion": 2,
-                    "fontAssetId": "48",
+                    "fontAssetId": "144",
                     "text": "Current Goal",
                     "alignment": "left",
-                    "verticalAlignment": "center",
+                    "verticalAlignment": "top",
                     "size": null,
-                    "color": "aaaaaa",
+                    "color": "cccccc",
                     "overrideOpacity": false,
                     "opacity": null
                   },
@@ -289,8 +290,8 @@
                 }
               ],
               "position": {
-                "x": 0,
-                "y": -1,
+                "x": 0.5,
+                "y": -1.25,
                 "z": 0
               },
               "orientation": {
@@ -320,8 +321,8 @@
             }
           ],
           "position": {
-            "x": -17,
-            "y": 9,
+            "x": -17.75,
+            "y": 10,
             "z": 0
           },
           "orientation": {

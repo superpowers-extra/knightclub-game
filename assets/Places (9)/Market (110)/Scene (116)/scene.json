@@ -1,0 +1,1481 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Main",
+      "children": [
+        {
+          "id": "1",
+          "name": "Camera",
+          "children": [],
+          "components": [
+            {
+              "type": "Camera",
+              "config": {
+                "formatVersion": 1,
+                "mode": "perspective",
+                "fov": 25,
+                "orthographicScale": 10,
+                "viewport": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 1,
+                  "height": 1
+                },
+                "depth": 0,
+                "nearClippingPlane": 0.1,
+                "farClippingPlane": 1000
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CameraBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -2.6530606746673584,
+            "y": 8.460855484008789,
+            "z": 18.826200485229492
+          },
+          "orientation": {
+            "x": -0.16610453971715095,
+            "y": 0.0007352826773123843,
+            "z": 0.004563657151194097,
+            "w": 0.986097312585944
+          },
+          "scale": {
+            "x": 0.9999999986823946,
+            "y": 0.9999999804962896,
+            "z": 1.0000000036778782
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1.0000000114080212,
+        "y": 1,
+        "z": 1.0000000114080212
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "3",
+      "name": "Scenery",
+      "children": [
+        {
+          "id": "22",
+          "name": "Map",
+          "children": [
+            {
+              "id": "25",
+              "name": "Overlay",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "234",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": -5.075838943689803,
+                "y": 1.8540116632800618,
+                "z": 7.146732203913928
+              },
+              "orientation": {
+                "x": 0,
+                "y": -0.17867705123783234,
+                "z": 0,
+                "w": 0.9839077703528722
+              },
+              "scale": {
+                "x": 0.32,
+                "y": 0.3,
+                "z": 0.4
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "ModelRenderer",
+              "config": {
+                "formatVersion": 1,
+                "modelAssetId": "213",
+                "animationId": "",
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -0.38917791843414307,
+            "y": 2.7014105319976807,
+            "z": -2.550633192062378
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.2456457557462947,
+            "z": 0,
+            "w": 0.969359667501195
+          },
+          "scale": {
+            "x": 1.1000000097102225,
+            "y": 1.100000023841858,
+            "z": 1.4000000046168266
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "24",
+          "name": "Stand",
+          "children": [],
+          "components": [
+            {
+              "type": "ModelRenderer",
+              "config": {
+                "formatVersion": 1,
+                "modelAssetId": "215",
+                "animationId": null,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -1.4438220262527466,
+            "y": -0.052222687751054764,
+            "z": -3.372831344604492
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.008815278029087525,
+            "z": 0,
+            "w": 0.9999611519181808
+          },
+          "scale": {
+            "x": 1.199999987054433,
+            "y": 1.2000000476837158,
+            "z": 1.199999987054433
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1.0000000114080212,
+        "y": 1,
+        "z": 1.0000000114080212
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "2",
+      "name": "Physics",
+      "children": [
+        {
+          "id": "27",
+          "name": "Stand",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 3,
+                  "y": 0.5,
+                  "z": 3
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -0.9677435755729675,
+            "y": 0.5,
+            "z": -3.574146032333374
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.15686653539866247,
+            "z": 0,
+            "w": 0.9876198044063172
+          },
+          "scale": {
+            "x": 0.9999999765584848,
+            "y": 1,
+            "z": 0.9999999765584848
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "36",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 3
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 2.8019611835479736,
+            "y": 0.5,
+            "z": -1.3225226402282715
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.36746137771183884,
+            "z": 0,
+            "w": 0.9300387864843653
+          },
+          "scale": {
+            "x": 1.0000000146616124,
+            "y": 1,
+            "z": 1.0000000146616124
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "37",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 4
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -4.4559407234191895,
+            "y": 0.5,
+            "z": -6.573577404022217
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.48069684754619146,
+            "z": 0,
+            "w": 0.8768868538129384
+          },
+          "scale": {
+            "x": 1.000000020962277,
+            "y": 1,
+            "z": 1.000000020962277
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "38",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 3
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -10.30930233001709,
+            "y": 0.5,
+            "z": -5.365554332733154
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.8927666696622834,
+            "z": 0,
+            "w": 0.4505193459168502
+          },
+          "scale": {
+            "x": 1.0000000119638237,
+            "y": 1,
+            "z": 1.0000000119638237
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "39",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 7
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -9.550386428833008,
+            "y": 0.5,
+            "z": 1.3328757286071777
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.9886647109997091,
+            "z": 0,
+            "w": -0.15014020214574983
+          },
+          "scale": {
+            "x": 0.9999999825553182,
+            "y": 1,
+            "z": 0.9999999825553182
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "40",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "CannonBody",
+              "config": {
+                "formatVersion": 2,
+                "mass": 0,
+                "fixedRotation": false,
+                "group": 1,
+                "mask": 1,
+                "shape": "box",
+                "positionOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "orientationOffset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "halfSize": {
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 6
+                },
+                "radius": 1,
+                "height": 1,
+                "segments": 16
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -4.244443416595459,
+            "y": 0.5,
+            "z": 5.438656330108643
+          },
+          "orientation": {
+            "x": 0,
+            "y": -0.6348295136123461,
+            "z": 0,
+            "w": 0.7726522418574872
+          },
+          "scale": {
+            "x": 0.9999999978516528,
+            "y": 1,
+            "z": 0.9999999978516528
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "26",
+          "name": "Wall",
+          "children": [],
+          "components": [
+            {
+              "type": "ModelRenderer",
+              "config": {
+                "formatVersion": 1,
+                "modelAssetId": "253",
+                "animationId": null,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -10.47006607055664,
+            "y": -0.11583339422941208,
+            "z": 1.9196256399154663
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.13565346686910518,
+            "z": 0,
+            "w": 0.9907563468427565
+          },
+          "scale": {
+            "x": 1.0000000036963286,
+            "y": 1,
+            "z": 1.5000001283772728
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1.0000000114080212,
+        "y": 1,
+        "z": 1.0000000114080212
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "8",
+      "name": "Teleporters",
+      "children": [
+        {
+          "id": "19",
+          "name": "Nightclub Street",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3.275479555130005,
+            "y": 0.1751573234796524,
+            "z": 2.4614946842193604
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.33592302179582173,
+            "z": 0,
+            "w": 0.9418894370629965
+          },
+          "scale": {
+            "x": 4.999999765498979,
+            "y": 1,
+            "z": 0.9999999791044389
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        },
+        {
+          "id": "20",
+          "name": "Sewers",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -0.11348020285367966,
+            "y": 0.0704374834895134,
+            "z": -4.015817165374756
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.95452065765903,
+            "z": 0,
+            "w": 0.2981447854782832
+          },
+          "scale": {
+            "x": 1.9999999963764026,
+            "y": 1,
+            "z": 0.9999999981882013
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        },
+        {
+          "id": "21",
+          "name": "Fitness Club",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -7.304231643676758,
+            "y": 0.06629727780818939,
+            "z": -7.344289302825928
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.969359667501195,
+            "z": 0,
+            "w": -0.24564576343237945
+          },
+          "scale": {
+            "x": 1.0000000114080212,
+            "y": 1,
+            "z": 1.0000000114080212
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "133"
+          }
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1.0000000114080212,
+        "y": 1,
+        "z": 1.0000000114080212
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "10",
+      "name": "Characters",
+      "children": [
+        {
+          "id": "23",
+          "name": "Sewer Entrance",
+          "children": [
+            {
+              "id": "33",
+              "name": "Model",
+              "children": [],
+              "components": [
+                {
+                  "type": "ModelRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "modelAssetId": "216",
+                    "animationId": "",
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": -0.061007969290040265,
+                "y": 0.778229630588849,
+                "z": -0.035293122122117104
+              },
+              "orientation": {
+                "x": 3.204653064661855e-18,
+                "y": 0.9986295347545738,
+                "z": -0.052335956242943835,
+                "w": 6.114842316355997e-17
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "35",
+              "name": "Physics",
+              "children": [],
+              "components": [
+                {
+                  "type": "CannonBody",
+                  "config": {
+                    "formatVersion": 2,
+                    "mass": 0,
+                    "fixedRotation": false,
+                    "group": 1,
+                    "mask": 1,
+                    "shape": "box",
+                    "positionOffset": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "orientationOffset": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "halfSize": {
+                      "x": 0.5,
+                      "y": 0.5,
+                      "z": 1
+                    },
+                    "radius": 1,
+                    "height": 1,
+                    "segments": 16
+                  },
+                  "id": "1"
+                }
+              ],
+              "position": {
+                "x": 0.3542610956730492,
+                "y": 0.7312789377528529,
+                "z": -0.007653243832328016
+              },
+              "orientation": {
+                "x": -0.036278040605899085,
+                "y": 0.009314272553424614,
+                "z": 0.021666821811527757,
+                "w": 0.9990634103840197
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SewersEntranceBehavior",
+                "propertyValues": {}
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": -0.3480006754398346,
+            "y": -0.16035687923431396,
+            "z": -3.721919536590576
+          },
+          "orientation": {
+            "x": 0.0017592435457590026,
+            "y": 0.48468228754317677,
+            "z": -0.12531644100967512,
+            "w": 0.8656649282521777
+          },
+          "scale": {
+            "x": 1.2000000290798971,
+            "y": 1.2000000286125825,
+            "z": 1.2000000157745436
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "17",
+          "name": "Charming Girl",
+          "children": [
+            {
+              "id": "18",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "182",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "market.blockBuster.0;market.blockBuster.1;market.blockBuster.2"
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -5.800675868988037,
+            "y": 0,
+            "z": 1.8572545051574707
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.24564576343237948,
+            "z": 0,
+            "w": 0.969359667501195
+          },
+          "scale": {
+            "x": 1.0000000114080212,
+            "y": 1,
+            "z": 1.0000000114080212
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "41",
+          "name": "Fish Guy",
+          "children": [
+            {
+              "id": "42",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "165",
+                    "animationId": "0",
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "market.fishGuy"
+                  },
+                  "noShapeShiftLineId": {
+                    "type": "string",
+                    "value": "market.illCutYou"
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -2.0803403854370117,
+            "y": 0,
+            "z": 0.7349287271499634
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.24564576343237948,
+            "z": 0,
+            "w": 0.969359667501195
+          },
+          "scale": {
+            "x": 1.0000000114080212,
+            "y": 1,
+            "z": 1.0000000114080212
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "43",
+          "name": "Fish Girl",
+          "children": [
+            {
+              "id": "44",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "166",
+                    "animationId": "0",
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "market.fishGirl"
+                  },
+                  "noShapeShiftLineId": {
+                    "type": "string",
+                    "value": "market.dontTryFishy"
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -3.5722928047180176,
+            "y": 0,
+            "z": 0.158664271235466
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0.24564576343237948,
+            "z": 0,
+            "w": 0.969359667501195
+          },
+          "scale": {
+            "x": 1.0000000114080212,
+            "y": 1,
+            "z": 1.0000000114080212
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "45",
+          "name": "Cranemou",
+          "children": [
+            {
+              "id": "46",
+              "name": "Sprite",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "180",
+                    "animationId": "0",
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "SingleLineBehavior",
+                "propertyValues": {
+                  "lineId": {
+                    "type": "string",
+                    "value": "market.cranemou"
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -8.273012161254883,
+            "y": 0,
+            "z": -4.568892002105713
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1.0000000114080212,
+            "y": 1,
+            "z": 1.0000000114080212
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1.0000000114080212,
+        "y": 1,
+        "z": 1.0000000114080212
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "11",
+      "name": "Pedestrian Paths",
+      "children": [
+        {
+          "id": "12",
+          "name": "Group 1",
+          "children": [
+            {
+              "id": "13",
+              "name": "1",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -6.749902725219727,
+                "y": 0,
+                "z": 6.44158411026001
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0.24564576343237948,
+                "z": 0,
+                "w": 0.969359667501195
+              },
+              "scale": {
+                "x": 1.0000000114080212,
+                "y": 1,
+                "z": 1.0000000114080212
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "14",
+              "name": "2",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -1.6510305404663086,
+                "y": 0,
+                "z": 2.824129581451416
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0.24564576343237948,
+                "z": 0,
+                "w": 0.969359667501195
+              },
+              "scale": {
+                "x": 1.0000000114080212,
+                "y": 1,
+                "z": 1.0000000114080212
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "28",
+              "name": "3",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 2.8744161128997803,
+                "y": 0,
+                "z": 2.201829195022583
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0.24564576343237948,
+                "z": 0,
+                "w": 0.969359667501195
+              },
+              "scale": {
+                "x": 1.0000000114080212,
+                "y": 1,
+                "z": 1.0000000114080212
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1.0000000114080212,
+            "y": 1,
+            "z": 1.0000000114080212
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "29",
+          "name": "Group 2",
+          "children": [
+            {
+              "id": "30",
+              "name": "1",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 3.522081136703491,
+                "y": 0,
+                "z": 2.5579357147216797
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0.24564576343237948,
+                "z": 0,
+                "w": 0.969359667501195
+              },
+              "scale": {
+                "x": 1.0000000114080212,
+                "y": 1,
+                "z": 1.0000000114080212
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "31",
+              "name": "2",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -4.468989849090576,
+                "y": 0,
+                "z": 2.7164080142974854
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0.24564576343237948,
+                "z": 0,
+                "w": 0.969359667501195
+              },
+              "scale": {
+                "x": 1.0000000114080212,
+                "y": 1,
+                "z": 1.0000000114080212
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "32",
+              "name": "3",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -7.049134731292725,
+                "y": 0,
+                "z": -6.346846580505371
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0.24564576343237948,
+                "z": 0,
+                "w": 0.969359667501195
+              },
+              "scale": {
+                "x": 1.0000000114080212,
+                "y": 1,
+                "z": 1.0000000114080212
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1.0000000114080212,
+            "y": 1,
+            "z": 1.0000000114080212
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1.0000000114080212,
+        "y": 1,
+        "z": 1.0000000114080212
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}
