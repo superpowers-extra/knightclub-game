@@ -105,6 +105,18 @@
     ]
   },
   {
+    "id": "292",
+    "name": "End Screen",
+    "type": null,
+    "children": [
+      {
+        "id": "293",
+        "name": "Scene",
+        "type": "scene"
+      }
+    ]
+  },
+  {
     "id": "6",
     "name": "Game",
     "type": "script"
@@ -896,7 +908,12 @@
           },
           {
             "id": "263",
-            "name": "Jailed Horace Behavior",
+            "name": "Jail Guard Behavior",
+            "type": "script"
+          },
+          {
+            "id": "291",
+            "name": "Final Horace Behavior",
             "type": "script"
           },
           {
@@ -913,6 +930,11 @@
                 "id": "274",
                 "name": "Overlay",
                 "type": "sprite"
+              },
+              {
+                "id": "287",
+                "name": "Bars",
+                "type": "sprite"
               }
             ]
           }
@@ -928,11 +950,6 @@
       {
         "id": "1",
         "name": "Horace",
-        "type": "sprite"
-      },
-      {
-        "id": "159",
-        "name": "Fatshlor",
         "type": "sprite"
       },
       {
@@ -1212,6 +1229,23 @@
           {
             "id": "252",
             "name": "Buritos",
+            "type": "sprite"
+          },
+          {
+            "id": "290",
+            "name": "Warden",
+            "type": "sprite"
+          }
+        ]
+      },
+      {
+        "id": "289",
+        "name": "Dungeon",
+        "type": null,
+        "children": [
+          {
+            "id": "159",
+            "name": "Jail Guard",
             "type": "sprite"
           }
         ]

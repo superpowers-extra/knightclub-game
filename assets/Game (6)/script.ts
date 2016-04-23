@@ -20,7 +20,7 @@ namespace Game {
 
   export enum Objectives {
     nightTimeFun,
-    getMyBodyBack,
+    locateMyBody,
     intoTheDungeon
   };
   
@@ -37,10 +37,9 @@ namespace Game {
     findAnotherWayIntoTheCastle,
     throughSewers,
     
-    enterTheDungeon,
-    findTheWarden,
-    getTheWardenOut,
-    breakOutOfJail
+    breakOutOfJail,
+    getTheWarden,
+    freeHorace
   };
   
   export let quest = {
@@ -146,6 +145,10 @@ namespace Game {
     const asset = Sup.get(`Musics/${place}`, Sup.Sound, { ignoreMissing: true });
     if (asset != null) return asset;
     else return Sup.get(`Musics/Main`, Sup.Sound);
+  }
+  
+  export function stopMusic() {
+    music.stop();
   }
 }
 

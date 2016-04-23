@@ -264,12 +264,6 @@
       "parentBehavior": "CharacterBehavior",
       "properties": []
     },
-    "JailedHoraceBehavior": {
-      "scriptId": "263",
-      "line": 0,
-      "parentBehavior": "CharacterBehavior",
-      "properties": []
-    },
     "DowieBehavior": {
       "scriptId": "270",
       "line": 0,
@@ -291,6 +285,18 @@
       "scriptId": "285",
       "line": 0,
       "parentBehavior": null,
+      "properties": []
+    },
+    "JailGuardBehavior": {
+      "scriptId": "263",
+      "line": 0,
+      "parentBehavior": "CharacterBehavior",
+      "properties": []
+    },
+    "FinalHoraceBehavior": {
+      "scriptId": "291",
+      "line": 0,
+      "parentBehavior": "SingleLineBehavior",
       "properties": []
     }
   }

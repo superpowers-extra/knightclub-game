@@ -13,7 +13,7 @@ class BridgeButtonBehavior extends CharacterBehavior {
     this.bridgePart1 = Sup.getActor("Scenery").getChild("Bridge Part 1");
     this.bridgePart2 = Sup.getActor("Scenery").getChild("Bridge Part 2");
     
-    if (Game.quest.mainObjective !== Game.Objectives.getMyBodyBack || Game.quest.currentGoal > Game.Goals.lowerTheBridge) {
+    if (Game.quest.mainObjective !== Game.Objectives.locateMyBody || Game.quest.currentGoal > Game.Goals.lowerTheBridge) {
       this.setBridgeLowered(true);
     }
   }

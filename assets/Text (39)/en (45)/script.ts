@@ -17,7 +17,10 @@ namespace Text {
       "Musclor": "Iron Nipples",
       
       "Fish Guy": "Phil",
-      "Fish Girl": "Chips"
+      "Fish Girl": "Chips",
+      
+      "Jail Guard": "Jail Guard",
+      "Warden": "Warden"
      },
     
     // Pedestrians
@@ -36,8 +39,8 @@ namespace Text {
     // Objectives & Goals
     objectives: {
       nightTimeFun: "Night-time Fun",
-      getMyBodyBack: "Get My Body Back",
-      intoTheDungeon: "Break into the dungeon"
+      locateMyBody: "Locate My Body",
+      intoTheDungeon: "Get My Body Back"
     },
     
     goals: {
@@ -52,10 +55,9 @@ namespace Text {
       findAnotherWayIntoTheCastle: "Find another way\ninto the Castle",
       throughSewers: "Get through the Sewers",
     
-      enterTheDungeon: "Enter the Dungeon",
-      findTheWarden: "Find the Warden",
-      getTheWardenOut: "Get the Warden\nOut of his Room",
-      breakOutOfJail: "Break out of jail"
+      breakOutOfJail: "Break out of jail",
+      getTheWarden: "Get the Warden",
+      freeHorace: "#FreeHorace2016"
     },
 
     // Town Entrance
@@ -218,9 +220,38 @@ namespace Text {
       ],
     },
 
-    // ...
     sewers: {
       shmollbollz: "*Loud sniffing*| You got a tissue?|| Nobody ever comes with a tissue."
+    },
+    
+    castleCourtyard: {
+      
+    },
+    
+    dungeon: {
+      guard: {
+        nope: [
+          "Hi!| I'd punch you in the face to steal your keys|, but this videogame has a strict \"no violence\" policy.",
+          "...| I appreciate it.",
+          "Come on, I just want to see my friend and totally not help him break out of jail.",
+          "Sorry,| visit hours are over.|| Plus,| the Warden keeps the keys,| I'm just here to enjoy the view."
+        ],
+        
+        open: [
+          "HOLY| S|%|@|!|. What's that stench?| Did the outhouse overflow into your flat again?",
+          "Maybe.",
+          "Ok.",
+          "Any comment?",
+          "Nope.",
+          "Good.",
+          "You look great.",
+          "Thanks.",
+          "Good.",
+          "Shut up.| Go open the cell."
+        ]
+      },
+
+      hiMe: "*Blank stare, drooling*"
     }
   };
 }

@@ -99,7 +99,7 @@ class BodyJailedBehavior extends InteractionBehavior {
       
       if (this.currentText >= this.textIds.length) {
         Game.dialog.hide();
-        Game.questManager.setMainObjective(Game.Objectives.getMyBodyBack, Game.Goals.goToTheCastle);
+        Game.questManager.setMainObjective(Game.Objectives.locateMyBody, Game.Goals.goToTheCastle);
         
         if (this.coach == null) {
           this.finish();

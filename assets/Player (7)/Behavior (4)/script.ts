@@ -48,7 +48,7 @@ class PlayerBehavior extends Sup.Behavior {
 
   update() {
     // TEMPORARY CHEAT CODES
-    /*if (Sup.Input.wasKeyJustPressed("NUMPAD0")) {
+    if (Sup.Input.wasKeyJustPressed("NUMPAD0")) {
       Game.playerPersonId = "Horace";
       Game.canShapeShift = true;
       Game.quest.mainObjective = Game.Objectives.nightTimeFun;
@@ -59,7 +59,7 @@ class PlayerBehavior extends Sup.Behavior {
     } else if (Sup.Input.wasKeyJustPressed("NUMPAD1")) {
       Game.playerPersonId = "Nightclub/Bridge Operator";
       Game.canShapeShift = true;
-      Game.quest.mainObjective = Game.Objectives.getMyBodyBack;
+      Game.quest.mainObjective = Game.Objectives.locateMyBody;
       Game.quest.currentGoal = Game.Goals.getSomeFreshAir;
       Game.currentPlace = "Nightclub";
       Game.leavePlace("Nightclub Street", 0);
@@ -67,15 +67,14 @@ class PlayerBehavior extends Sup.Behavior {
     } else if (Sup.Input.wasKeyJustPressed("NUMPAD2")) {
       Game.playerPersonId = "Market/Charming Girl";
       Game.canShapeShift = true;
-      Game.quest.mainObjective = Game.Objectives.getMyBodyBack;
+      Game.quest.mainObjective = Game.Objectives.locateMyBody;
       Game.quest.currentGoal = Game.Goals.charmCastleGuard;
       Game.currentPlace = "Nightclub Street";
       Game.leavePlace("Castle Bridge", 0);
       return;
     } else if (Sup.Input.wasKeyJustPressed("NUMPAD3")) {
       Game.playerPersonId = "Market/Charming Girl";
-      Game.canShapeShift = true;
-      Game.quest.mainObjective = Game.Objectives.getMyBodyBack;
+      Game.quest.mainObjective = Game.Objectives.locateMyBody;
       Game.quest.currentGoal = Game.Goals.findAnotherWayIntoTheCastle;
       Game.currentPlace = "Nightclub Street";
       Game.leavePlace("Market", 0);
@@ -83,12 +82,20 @@ class PlayerBehavior extends Sup.Behavior {
     } else if (Sup.Input.wasKeyJustPressed("NUMPAD4")) {
       Game.playerPersonId = "Fitness Club/Musclor";
       Game.canShapeShift = true;
-      Game.quest.mainObjective = Game.Objectives.getMyBodyBack;
+      Game.quest.mainObjective = Game.Objectives.locateMyBody;
       Game.quest.currentGoal = Game.Goals.throughSewers;
       Game.currentPlace = "Sewers";
       Game.leavePlace("Castle Courtyard", 0);
       return;
-    }*/
+    } else if (Sup.Input.wasKeyJustPressed("NUMPAD5")) {
+      Game.playerPersonId = "Castle Courtyard/Warden";
+      Game.canShapeShift = true;
+      Game.quest.mainObjective = Game.Objectives.intoTheDungeon;
+      Game.quest.currentGoal = Game.Goals.freeHorace;
+      Game.currentPlace = "Castle Courtyard";
+      Game.leavePlace("Dungeon", 0);
+      return;
+    }
     
     this.spriteActor.setOrientation(Game.camera.orientation);
     
