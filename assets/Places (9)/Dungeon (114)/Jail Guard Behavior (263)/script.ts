@@ -35,6 +35,8 @@ class JailGuardBehavior extends CharacterBehavior {
       Sup.getActor("Scenery").getChild("Bars").destroy();
       
       // TODO: Play sound effect
+    } else if (Game.quest.currentGoal === Game.Goals.breakOutOfJail) {
+      Game.questManager.setCurrentGoal(Game.Goals.getTheWarden);
     }
   }
 }

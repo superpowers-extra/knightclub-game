@@ -2,20 +2,20 @@ namespace Game {
   export let language = "en";
 
   export let player: PlayerBehavior;
-  export let playerPersonId = "Horace";
+  export let playerPersonId: string;
   export let dropBodyLocation: {
     place: string;
     position: Sup.Math.Vector3;
   }
-  export let canShapeShift = false;
+  export let canShapeShift: boolean;
   
   export let camera: CameraBehavior;
-  export let currentPlace = "Start";
+  export let currentPlace: string;
   
   export let dialog: DialogBehavior;
   export let questManager: QuestManagerBehavior;
   
-  const musicVolume = 0.4;
+  export const musicVolume = 0.4;
   let music: Sup.Audio.SoundPlayer;
 
   export enum Objectives {
@@ -50,6 +50,9 @@ namespace Game {
   export let interactions: InteractionBehavior[] = [];
 
   export function start() {
+    playerPersonId = "Horace";
+    currentPlace = "Start";
+    canShapeShift = false;
     quest.mainObjective = null;
     quest.currentGoal = null;
 

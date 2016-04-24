@@ -2,6 +2,59 @@
   "formatVersion": 1,
   "nodes": [
     {
+      "id": "1",
+      "name": "Camera",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "formatVersion": 1,
+            "mode": "orthographic",
+            "fov": 45,
+            "orthographicScale": 10,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            },
+            "depth": 0,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 1000
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "EndScreenBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
       "id": "2",
       "name": "End Screen",
       "children": [],
@@ -32,59 +85,14 @@
       },
       "orientation": {
         "x": -0.14996615139435085,
-        "y": 0.11528937496676996,
+        "y": 0.1152893728814572,
         "z": 0.407890629368767,
         "w": 0.8932209996924246
       },
       "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "visible": true,
-      "layer": 0,
-      "prefab": null
-    },
-    {
-      "id": "1",
-      "name": "Camera",
-      "children": [],
-      "components": [
-        {
-          "type": "Camera",
-          "config": {
-            "formatVersion": 1,
-            "mode": "orthographic",
-            "fov": 45,
-            "orthographicScale": 10,
-            "viewport": {
-              "x": 0,
-              "y": 0,
-              "width": 1,
-              "height": 1
-            },
-            "depth": 0,
-            "nearClippingPlane": 0.1,
-            "farClippingPlane": 1000
-          },
-          "id": "0"
-        }
-      ],
-      "position": {
-        "x": 0,
-        "y": 0,
-        "z": 10
-      },
-      "orientation": {
-        "x": 0,
-        "y": 0,
-        "z": 0,
-        "w": 1
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
+        "x": 1.0000000052088542,
+        "y": 0.9999999947591012,
+        "z": 1.0000000269499758
       },
       "visible": true,
       "layer": 0,

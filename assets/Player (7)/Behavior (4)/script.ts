@@ -74,6 +74,7 @@ class PlayerBehavior extends Sup.Behavior {
       return;
     } else if (Sup.Input.wasKeyJustPressed("NUMPAD3")) {
       Game.playerPersonId = "Market/Charming Girl";
+      Game.canShapeShift = true;
       Game.quest.mainObjective = Game.Objectives.locateMyBody;
       Game.quest.currentGoal = Game.Goals.findAnotherWayIntoTheCastle;
       Game.currentPlace = "Nightclub Street";
@@ -199,8 +200,7 @@ class PlayerBehavior extends Sup.Behavior {
   }
 
   private shapeShift(character: InteractionBehavior) {
-    this.frozen = true;
-    this.actor.cannonBody.body.velocity.setZero();
+    this.freeze();
 
     Sup.Audio.playSound(`SFX/Shapeshift/${Sup.Math.Random.sample(Sup.get("SFX/Shapeshift", Sup.Folder).children)}`, 0.8);
     Fade.start(Fade.Direction.Out, { duration: 150 }, () => {
@@ -225,8 +225,17 @@ class PlayerBehavior extends Sup.Behavior {
         if (Game.playerPersonId === "Fitness Club/Chiome") Sup.Audio.playSound(`SFX/Waf waf`);
         else Sup.Audio.playSound(`SFX/Screams/${Sup.Math.Random.sample(Sup.get("SFX/Screams", Sup.Folder).children)}`, 0.8);
       });
-      Fade.start(Fade.Direction.In, { duration: 200, delay: 1000 }, () => { this.frozen = false; });
+      Fade.start(Fade.Direction.In, { duration: 200, delay: 1000 }, () => { this.unfreeze();  });
     });
+  }
+
+  freeze() {
+    this.frozen = true;
+    this.actor.cannonBody.body.velocity.setZero();
+  }
+
+  unfreeze() {
+    this.frozen = false;
   }
 
   startInteraction(interaction: Interaction) {

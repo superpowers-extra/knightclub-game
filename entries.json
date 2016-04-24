@@ -113,6 +113,11 @@
         "id": "293",
         "name": "Scene",
         "type": "scene"
+      },
+      {
+        "id": "294",
+        "name": "Behavior",
+        "type": "script"
       }
     ]
   },

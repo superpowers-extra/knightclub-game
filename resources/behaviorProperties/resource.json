@@ -298,6 +298,12 @@
       "line": 0,
       "parentBehavior": "SingleLineBehavior",
       "properties": []
+    },
+    "EndScreenBehavior": {
+      "scriptId": "294",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }
