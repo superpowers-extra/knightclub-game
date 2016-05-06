@@ -225,7 +225,32 @@ namespace Text {
     },
     
     castleCourtyard: {
+      wardenDoor: {
+        knock: "*Knock knock*",
+        dayOff: "Today is my day off.| Go away.",
+        needToGetHimOut: "(I need to find a way to get him out.)",
+        noAnswer: "(No answer.)"
+      },
+
+      outhouse: {
+        cant: [
+          "I can't go when someone is watching. Stagefright.",
+          "I'm all out of ammo, it's been a while since I ate anything."
+        ],
+        
+        apocalypse: "Oh god.| I feel so much better.| I wonder...| do they have any more of them delicious burritos?",
+        wardenFlood: "What the.| Oh my god.| It's everywhere.| EVERYWHERE."
+      },
       
+      wardenDry: [
+        "I'm trying to dry off.| Go away, you're casting a shadow over me.",
+        "Don't you think you need a shower?",
+        "I'm an adult."
+      ],
+      
+      burritoBoy: {
+        ateTooMuch: "I ate all the pasta burritos.| All of them.| So good|... my insides are burning."
+      }
     },
     
     dungeon: {
@@ -233,13 +258,13 @@ namespace Text {
         nope: [
           "Hi!| I'd punch you in the face to steal your keys|, but this videogame has a strict \"no violence\" policy.",
           "...| I appreciate it.",
-          "Come on, I just want to see my friend and totally not help him break out of jail.",
-          "Sorry,| visit hours are over.|| Plus,| the Warden keeps the keys,| I'm just here to enjoy the view."
+          "Come on,| I just want to see my friend and totally not help him break out of jail.",
+          "Sorry,| visit hours are over.|| Plus,| the Warden has the keys,| I'm just here to enjoy the view."
         ],
         
         open: [
-          "HOLY| S|%|@|!|. What's that stench?| Did the outhouse overflow into your flat again?",
-          "Maybe.",
+          "HOLY| S#@%!!!| What's that stench?| Did the outhouse overflow into your flat again,| covering every square inch in disgusting murky feces?",
+          "...| Maybe.",
           "Ok.",
           "Any comment?",
           "Nope.",
